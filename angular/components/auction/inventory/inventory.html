@@ -1,0 +1,32 @@
+<div class="auction-box z-depth-2">
+  <div class="auction-box-header">
+    <h5>Inventories</h5>
+  </div>
+  <div class="auction-box-content scroll-y">
+    <ul class="collection">
+
+      <li class="collection-item" ng-repeat="inventory in inventories">
+        <div class="row">
+          <div class="col s12 m4 center">
+            <img ng-src="assets/images/{{ inventory.image }}.jpeg" alt="" class="inventory_image">
+            <br />
+            <p class="inventory_name">{{ inventory.name }}</p>
+          </div>
+          <div class="col s12 m4 center">
+            <p>Quantity </p>
+            <h4> {{ inventory.quantity }} </h4>
+          </div>
+          <div class="col s12 m4 center">
+            <a href="javascript:void(0);" class="secondary-content"><i class="material-icons cart_icon">shopping_cart</i></a>
+            <button class="btn waves-effect waves-light orange inventory_action" data-target="start_auction_modal"
+                    ng-click="setThisInventoryForAuction(inventory)" modal>Auction</button>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,70 @@
+<div class="auction-box z-depth-2">
+    <div class="auction-box-header">
+        <h5>Current Auction </h5>
+    </div>
+    <div class="auction-box-content center">
+
+        <div ng-if="auction.fullState == 'LIVE'" class="auction-box-content-pad">
+            <p>Seller:
+                <span class="bold">{{ auction.user.username }}</span>
+            </p>
+            <div class="row">
+                <div class="col s12 m6 center">
+                    <img ng-src="assets/images/{{ auction.inventory.image }}.jpeg" alt="" class="inventory_image">
+                    <br />
+                    <p class="inventory_name">{{ auction.inventory.name }}</p>
+                </div>
+                <div class="col s12 m6 center">
+                    <p>Quantity </p>
+                    <h4> {{ auction.quantity }} </h4>
+                </div>
+            </div>
+            <p>Time left:
+                <span class="bold">{{ auctionCountDown }} seconds</span>
+            </p>
+            <p>{{ auction.bid == 0 ? 'Minimum' : 'Winning' }} Bid:
+                <span class="bold">{{ auction.bid == 0 ? auction.minimum_bid : auction.bid
+                  }}</span>
+            </p>
+            <div ng-hide="auction.user.id == user.user_id">
+                <div class="input-field col s12">
+                    <input id="your-bid" type="text" ng-model="myBid.amount">
+                    <label for="your-bid">Your Bid</label>
+                </div>
+
+                <button id="download-button" class="btn-large waves-effect waves-light orange" ng-click="placeBid()">Place Bid</button>
+            </div>
+        </div>
+
+        <div ng-if="auction.fullState == 'ENDED'" class="auction-box-content-pad">
+            <h5>No auction at the moment.</h5>
+        </div>
+
+        <div ng-if="auction.fullState == 'AUCTION_INTERVAL'" class="auction-box-content-pad">
+
+            <div ng-if="auction.bid > 0">
+
+                <p>Winning Bid:
+                    <span class="bold">{{ auction.bid }}</span>
+                </p>
+
+                <p>Winner:
+                    <span class="bold">{{ auction.winner.username }}</span>
+                </p>
+
+            </div>
+
+            <div ng-if="auction.bid == 0">
+                <p> Nobobdy placed any bid on this auction </p>
+            </div>
+
+            <!--<p>Next Auction in:-->
+            <!--<span class="bold">{{ timeCountDown }} seconds</span>-->
+            <!--</p>-->
+
+        </div>
+
+
+    </div>
+
+</div>

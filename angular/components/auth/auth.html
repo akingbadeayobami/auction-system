@@ -1,0 +1,21 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <form ng-submit="authenticate()" name="authForm">
+    <br><br>
+    <h1 class="header center orange-text">Your Username</h1>
+    <div class="row center">
+
+      <div class="input-field col s12">
+        <input id="username" type="text" name="formUsername" ng-model="username" required>
+        <label for="username">Username</label>
+        <h6 ng-show="authForm.formUsername.$dirty && authForm.formUsername.$error.required">Username Is Required</h6>
+      </div>
+
+    </div>
+    <div class="row center">
+      <button class="btn-large waves-effect waves-light orange" ng-disabled="authForm.$invalid">Enter</button>
+    </div>
+    <br><br>
+  </form>
+  </div>
+</div>

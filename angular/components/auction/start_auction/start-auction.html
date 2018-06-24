@@ -1,0 +1,19 @@
+<div id="start_auction_modal" class="modal">
+    <div class="modal-content">
+        <h4>Start Auction</h4>
+        <div class="input-field col s12">
+            <input id="qty" ng-model="startAuctionModel.quantity" type="number" ng-minlength="1">
+            <label for="qty">Quantity</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="min-bid" type="number" ng-model="startAuctionModel.minimum_bid" ng-minlength="1">
+            <label for="min-bid">Mininum Bid</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" class="modal-action modal-close waves-effect waves-green btn-flat orange"
+           ng-click="startAuction()">Start Auction</a>
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+    </div>
+</div>
+

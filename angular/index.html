@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="realTimeAuction" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="realTimeAuction" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="realTimeAuction" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="realTimeAuction" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Real Time Auction</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" type="text/css"  media="screen,projection"/>
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css"  media="screen,projection"/>
+  <link rel="stylesheet" href="assets/css/material-icons.css" >
+   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+    	<a id="logo-container" href="#" class="brand-logo">Real Time Auction</a>
+     </div>
+  </nav>
+
+  <div ng-view></div>
+
+  <script src="assets/js/socket.io.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-socket-io/socket.min.js"></script>
+  <script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+  <script src="app.module.js"></script>
+  <script src="components/auth/auth-module.js"></script>
+  <script src="components/auth/auth-controller.js"></script>
+  <script src="components/auth/auth-factory.js"></script>
+  <script src="components/auction/auction-module.js"></script>
+  <script src="components/auction/auction-controller.js"></script>
+  <script src="components/auction/auction-factory.js"></script>
+  <script src="components/auction/current_auction/current-auction-directive.js"></script>
+  <script src="components/auction/inventory/inventory-directive.js"></script>
+  <script src="components/auction/player_stats/player-stats-directive.js"></script>
+  <script src="components/auction/start_auction/start-auction-directive.js"></script>
+</body>
+</html>

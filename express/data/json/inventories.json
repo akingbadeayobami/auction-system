@@ -1,0 +1,37 @@
+[{
+        "user_id": 1,
+        "name": "bread",
+        "quantity": "30",
+        "image": "bread"
+    },
+    {
+        "user_id": 1,
+        "name": "carrots",
+        "quantity": "18",
+        "image": "carrots"
+    },
+    {
+        "user_id": 1,
+        "name": "diamond",
+        "quantity": "1",
+        "image": "diamond"
+    },
+    {
+        "user_id": 2,
+        "name": "bread",
+        "quantity": "30",
+        "image": "bread"
+    },
+    {
+        "user_id": 2,
+        "name": "carrots",
+        "quantity": "18",
+        "image": "carrots"
+    },
+    {
+        "user_id": 2,
+        "name": "diamond",
+        "quantity": "1",
+        "image": "diamond"
+    }
+]

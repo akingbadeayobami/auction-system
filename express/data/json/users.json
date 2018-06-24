@@ -1,0 +1,13 @@
+[{
+        "id": 1,
+        "username": "john",
+        "coins": 1000,
+        "token": ""
+    },
+    {
+        "id": 2,
+        "username": "jane",
+        "coins": 1000,
+        "token": "known_token"
+    }
+]

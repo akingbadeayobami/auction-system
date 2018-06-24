@@ -1,0 +1,38 @@
+.bold{
+  font-weight: bold;
+}
+.auction-box{
+  /*border: 2px solid black;*/
+}
+.auction-box-header{
+text-align: center;
+padding:10px;
+border-bottom: 2px solid #e0e0e0;
+}
+.auction-box-content ul{
+  margin: 0px;
+}
+.auction-box-content-pad{
+  padding: 10px;
+}
+.scroll-y{
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.auction-box-content .row{
+  margin-bottom: 0;
+}
+.inventory_image{
+  width: 100%;
+}
+.inventory_name{
+  margin-bottom: 0px;
+}
+.inventory_action{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cart_icon{
+  font-size: 5em !important;
+}
